@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load extra_tags %}
+
+    {% block body_block %}
+    <h1>This is relative home page</h1>
+    <h1>{{ text|upper }}</h1>
+    <h1>{{ text|cutWord:'hello' }}</h1>
+    <p></p>
+    <a href="{% url 'relative_app:other_page' %}">Other page</a>
+
+    {% endblock %}
